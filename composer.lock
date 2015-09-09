@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bf1a72d47302dbb8d9b28887b1ff6336",
+    "hash": "2ae16bb7fd016973ad0ec2281454af4f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -35,16 +35,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.1.8",
+            "version": "v5.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "140dd18acb6be297fbd9870f8dda9d9d0a17c460"
+                "reference": "610aea16e3d91dfd85db4cf43703403a83b7cba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/140dd18acb6be297fbd9870f8dda9d9d0a17c460",
-                "reference": "140dd18acb6be297fbd9870f8dda9d9d0a17c460",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/610aea16e3d91dfd85db4cf43703403a83b7cba2",
+                "reference": "610aea16e3d91dfd85db4cf43703403a83b7cba2",
                 "shasum": ""
             },
             "require": {
@@ -73,15 +73,21 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2015-07-14 01:36:14"
+            "time": "2015-08-31 12:59:22"
         },
         {
             "name": "monii/action-handler-psr7-middleware",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/simensen/Code/monii-action-handler-psr7-middleware/",
-                "reference": "ef06527286f748537f57d21db51ca4a78bf1b5e1"
+                "url": "https://github.com/monii/monii-action-handler-psr7-middleware.git",
+                "reference": "105ed04631511fe807fc798e49914f28473b395a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monii/monii-action-handler-psr7-middleware/zipball/105ed04631511fe807fc798e49914f28473b395a",
+                "reference": "105ed04631511fe807fc798e49914f28473b395a",
+                "shasum": ""
             },
             "require": {
                 "psr/http-message": "^1.0"
@@ -102,22 +108,18 @@
                     "Monii\\Http\\Middleware\\Psr7\\ActionHandler\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Monii\\Http\\Middleware\\Psr7\\ActionHandler\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "monii.io",
-                    "email": "team@monii.com"
-                },
-                {
                     "name": "Beau Simensen",
                     "email": "beau@dflydev.com"
+                },
+                {
+                    "name": "monii.io",
+                    "email": "team@monii.com"
                 },
                 {
                     "name": "Steve Marks",
@@ -135,19 +137,26 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2015-08-31 17:43:57"
+            "time": "2015-08-31 22:06:35"
         },
         {
             "name": "monii/action-handler-psr7-middleware-container-interop",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/simensen/Code/monii-action-handler-psr7-middleware-container-interop/",
-                "reference": "60289ffbb6d192b8aa83df4e40e6b44d752b2453"
+                "url": "https://github.com/monii/monii-action-handler-psr7-middleware-container-interop.git",
+                "reference": "b38f862cc68f2b1121e6415ccf1c37be75d3a4c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monii/monii-action-handler-psr7-middleware-container-interop/zipball/b38f862cc68f2b1121e6415ccf1c37be75d3a4c2",
+                "reference": "b38f862cc68f2b1121e6415ccf1c37be75d3a4c2",
+                "shasum": ""
             },
             "require": {
                 "container-interop/container-interop": "^1.1",
                 "monii/action-handler-psr7-middleware": "^0.0@dev",
+                "php": ">=5.5",
                 "psr/http-message": "^1.0"
             },
             "require-dev": {
@@ -166,22 +175,18 @@
                     "Monii\\Http\\Middleware\\Psr7\\ActionHandler\\Resolver\\ContainerInterop\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Monii\\Http\\Middleware\\Psr7\\ActionHandler\\Resolver\\ContainerInterop\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "monii.io",
-                    "email": "team@monii.com"
-                },
-                {
                     "name": "Beau Simensen",
                     "email": "beau@dflydev.com"
+                },
+                {
+                    "name": "monii.io",
+                    "email": "team@monii.com"
                 },
                 {
                     "name": "Steve Marks",
@@ -192,7 +197,7 @@
                     "email": "alec.charlton@monii.com"
                 }
             ],
-            "description": "PSR-7 Action Handler Middleware",
+            "description": "Resolve PSR-7 Action Handlers to objects in a Container",
             "keywords": [
                 "action",
                 "container",
@@ -201,15 +206,21 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2015-08-31 18:25:33"
+            "time": "2015-08-31 22:09:49"
         },
         {
             "name": "monii/container-interop-laravel",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/simensen/Code/monii-container-interop-laravel/",
+                "url": "https://github.com/monii/monii-container-interop-laravel.git",
                 "reference": "23856071ce8ad1daaac7f732705a961c05becc8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monii/monii-container-interop-laravel/zipball/23856071ce8ad1daaac7f732705a961c05becc8a",
+                "reference": "23856071ce8ad1daaac7f732705a961c05becc8a",
+                "shasum": ""
             },
             "require": {
                 "container-interop/container-interop": "^1.1",
@@ -232,22 +243,18 @@
                     "Monii\\Interop\\Container\\Laravel\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Monii\\Interop\\Container\\Laravel\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "monii.io",
-                    "email": "team@monii.com"
-                },
-                {
                     "name": "Beau Simensen",
                     "email": "beau@dflydev.com"
+                },
+                {
+                    "name": "monii.io",
+                    "email": "team@monii.com"
                 },
                 {
                     "name": "Steve Marks",
@@ -266,8 +273,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/simensen/Code/monii-nikic-fast-route-psr7-middleware/",
-                "reference": "994a4252bb48864e4e6bbe61aeb3f6048df91e6f"
+                "url": "https://github.com/monii/monii-nikic-fast-route-psr7-middleware.git",
+                "reference": "9a6f87d2e461d9cfe5d086092059e9af2dbef0c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monii/monii-nikic-fast-route-psr7-middleware/zipball/9a6f87d2e461d9cfe5d086092059e9af2dbef0c8",
+                "reference": "9a6f87d2e461d9cfe5d086092059e9af2dbef0c8",
+                "shasum": ""
             },
             "require": {
                 "nikic/fast-route": "^0.6.0",
@@ -289,22 +302,18 @@
                     "Monii\\Http\\Middleware\\Psr7\\NikicFastRoute\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Monii\\Http\\Middleware\\Psr7\\NikicFastRoute\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "monii.io",
-                    "email": "team@monii.com"
-                },
-                {
                     "name": "Beau Simensen",
                     "email": "beau@dflydev.com"
+                },
+                {
+                    "name": "monii.io",
+                    "email": "team@monii.com"
                 },
                 {
                     "name": "Steve Marks",
@@ -315,14 +324,14 @@
                     "email": "alec.charlton@monii.com"
                 }
             ],
-            "description": "PSR-7 Routing Middleware using Nikita Popov's fast request router (kic/fast-route)",
+            "description": "PSR-7 Routing Middleware using Nikita Popov's fast request router (nikic/fast-route)",
             "keywords": [
                 "middleware",
                 "psr-7",
                 "router",
                 "routing"
             ],
-            "time": "2015-08-31 18:06:18"
+            "time": "2015-08-31 22:15:50"
         },
         {
             "name": "nikic/fast-route",
@@ -1400,16 +1409,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666"
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/c1a26c729508f73560c1a4f767f60b8ab6b4a666",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
                 "shasum": ""
             },
             "require": {
@@ -1470,20 +1479,20 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-06-24 03:16:23"
+            "time": "2015-09-09 00:18:50"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2dc7b06c065df96cc686c66da2705e5e18aef661",
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661",
                 "shasum": ""
             },
             "require": {
@@ -1519,7 +1528,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 14:07:07"
+            "time": "2015-08-24 07:13:45"
         }
     ],
     "aliases": [],
@@ -1532,6 +1541,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.5"
+    },
     "platform-dev": []
 }
