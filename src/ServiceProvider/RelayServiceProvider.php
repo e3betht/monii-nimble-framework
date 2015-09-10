@@ -6,7 +6,6 @@ use Illuminate\Contracts\Container\Container;
 use Monii\Http\Middleware\Psr7\ActionHandler\ActionHandler;
 use Monii\Http\Middleware\Psr7\NikicFastRoute\NikicFastRoute;
 use Monii\Nimble\App;
-use Relay\Middleware\ResponseSender;
 use Relay\Relay;
 use Relay\RelayBuilder;
 
@@ -20,7 +19,6 @@ class RelayServiceProvider
 
             $queue = array_merge(
                 [
-                    $container->make(ResponseSender::class),
                     $container->make(NikicFastRoute::class, [
                         'actionAttributeName' => App::DEFAULT_ACTION_ATTRIBUTE_NAME,
                         'parametersAttributeName' => App::DEFAULT_PARAMETERS_ATTRIBUTE_NAME,
