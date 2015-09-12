@@ -5,8 +5,8 @@ namespace Monii\Nimble\ServiceProvider;
 use FastRoute;
 use Illuminate\Contracts\Container\Container;
 use Monii\Http\Middleware\Psr7\NikicFastRoute\Parameters\ParametersReader;
-use Monii\Nimble\App;
 use Monii\Nimble\RouteProvider;
+use Monii\Nimble\WebApp;
 
 class NikicFastRouteServiceProvider
 {
@@ -29,7 +29,7 @@ class NikicFastRouteServiceProvider
         });
 
         $container->bind(ParametersReader::class, function () {
-            return new ParametersReader(App::DEFAULT_PARAMETERS_ATTRIBUTE_NAME);
+            return new ParametersReader(WebApp::PARAMETERS_ATTRIBUTE_NAME);
         });
     }
 }
