@@ -216,12 +216,6 @@
                 "url": "https://github.com/monii/monii-container-interop-laravel.git",
                 "reference": "23856071ce8ad1daaac7f732705a961c05becc8a"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/monii/monii-container-interop-laravel/zipball/23856071ce8ad1daaac7f732705a961c05becc8a",
-                "reference": "23856071ce8ad1daaac7f732705a961c05becc8a",
-                "shasum": ""
-            },
             "require": {
                 "container-interop/container-interop": "^1.1",
                 "illuminate/contracts": "^5.0",
@@ -243,18 +237,22 @@
                     "Monii\\Interop\\Container\\Laravel\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Monii\\Interop\\Container\\Laravel\\Tests\\": "tests"
+                }
+            },
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Beau Simensen",
-                    "email": "beau@dflydev.com"
-                },
-                {
                     "name": "monii.io",
                     "email": "team@monii.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com"
                 },
                 {
                     "name": "Steve Marks",
@@ -274,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/monii/monii-nikic-fast-route-psr7-middleware.git",
-                "reference": "9a6f87d2e461d9cfe5d086092059e9af2dbef0c8"
+                "reference": "d46830ab8f1d63d28532ea4115302c176628f0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monii/monii-nikic-fast-route-psr7-middleware/zipball/9a6f87d2e461d9cfe5d086092059e9af2dbef0c8",
-                "reference": "9a6f87d2e461d9cfe5d086092059e9af2dbef0c8",
+                "url": "https://api.github.com/repos/monii/monii-nikic-fast-route-psr7-middleware/zipball/d46830ab8f1d63d28532ea4115302c176628f0f9",
+                "reference": "d46830ab8f1d63d28532ea4115302c176628f0f9",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +329,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2015-08-31 22:15:50"
+            "time": "2015-09-12 18:14:21"
         },
         {
             "name": "nikic/fast-route",

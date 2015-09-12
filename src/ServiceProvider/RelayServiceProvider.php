@@ -5,7 +5,7 @@ namespace Monii\Nimble\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
 use Monii\Http\Middleware\Psr7\ActionHandler\ActionHandler;
 use Monii\Http\Middleware\Psr7\NikicFastRoute\NikicFastRoute;
-use Monii\Nimble\App;
+use Monii\Nimble\WebApp;
 use Relay\Relay;
 use Relay\RelayBuilder;
 
@@ -20,8 +20,8 @@ class RelayServiceProvider
             $queue = array_merge(
                 [
                     $container->make(NikicFastRoute::class, [
-                        'actionAttributeName' => App::DEFAULT_ACTION_ATTRIBUTE_NAME,
-                        'parametersAttributeName' => App::DEFAULT_PARAMETERS_ATTRIBUTE_NAME,
+                        'actionAttributeName' => WebApp::ACTION_ATTRIBUTE_NAME,
+                        'parametersAttributeName' => WebApp::PARAMETERS_ATTRIBUTE_NAME,
                     ]),
                 ],
                 $container->tagged('middleware.error_handler'),
@@ -30,7 +30,7 @@ class RelayServiceProvider
                 $container->tagged('middleware.late'),
                 [
                     $container->make(ActionHandler::class, [
-                        'actionAttributeName' => App::DEFAULT_ACTION_ATTRIBUTE_NAME,
+                        'actionAttributeName' => WebApp::ACTION_ATTRIBUTE_NAME,
                     ]),
                 ]
             );
