@@ -7,6 +7,7 @@ use Monii\Nimble\ServiceProvider\ActionHandlerServiceProvider;
 use Monii\Nimble\ServiceProvider\ContainerServiceProvider;
 use Monii\Nimble\ServiceProvider\NikicFastRouteServiceProvider;
 use Monii\Nimble\ServiceProvider\RelayServiceProvider;
+use Monii\Nimble\ServiceProvider\ViewTransformerServiceProvider;
 
 class WebApp
 {
@@ -19,6 +20,7 @@ class WebApp
             ActionHandlerServiceProvider::class,
             NikicFastRouteServiceProvider::class,
             RelayServiceProvider::class,
+            ViewTransformerServiceProvider::class,
         ]);
     }
 }

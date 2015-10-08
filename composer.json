@@ -25,8 +25,10 @@
         "php": ">=5.5",
         "monii/action-handler-psr7-middleware": "^0.0@dev",
         "monii/action-handler-psr7-middleware-container-interop": "^0.0@dev",
-        "monii/nikic-fast-route-psr7-middleware": "^0.0@dev",
         "monii/container-interop-laravel": "^0.0@dev",
+        "monii/nikic-fast-route-psr7-middleware": "^0.0@dev",
+        "monii/psr7-view-transformer": "^0.0@dev",
+        "monii/response-assertion-psr7-middleware": "^0.0@dev",
         "relay/relay": "^0.2.0",
         "relay/middleware": "^0.1.0"
     },
