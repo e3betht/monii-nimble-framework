@@ -23,7 +23,7 @@ class NikicFastRouteServiceProvider
 
         $container->afterResolving(FastRoute\RouteCollector::class, function (FastRoute\RouteCollector $routeCollector, Container $container) {
             /** @var RouteProvider $routeProvider */
-            foreach ($container->tagged('route_provider') as $routeProvider) {
+            foreach ($container->tagged('nimble.route_provider') as $routeProvider) {
                 $routeProvider->addRoutes($routeCollector);
             }
         });
