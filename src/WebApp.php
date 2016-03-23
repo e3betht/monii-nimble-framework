@@ -13,6 +13,11 @@ class WebApp
 {
     const ACTION_ATTRIBUTE_NAME = 'monii/nimble-app:action';
     const PARAMETERS_ATTRIBUTE_NAME = 'monii/nimble-app:parameters';
+    const VIEW_TRANSFORMER = 'monii/nimble-app:view_transformer';
+    const MIDDLEWARE_ERROR_HANDLER = 'monii/nimble-app:middleware.error_handler';
+    const MIDDLEWARE_EARLY = 'monii/nimble-app:middleware.early';
+    const MIDDLEWARE = 'monii/nimble-app:middleware';
+    const MIDDLEWARE_LATE = 'monii/nimble-app:middleware.late';
 
     public static function webify(App $app, Container $container)
     {

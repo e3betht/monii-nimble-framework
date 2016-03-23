@@ -13,12 +13,12 @@ class ViewTransformerServiceProvider
     public function register(Container $container)
     {
         $container->bind(ViewTransformer::class, function (Container $container) {
-            return new ViewTransformerChain($container->tagged('nimble.view_transformer'));
+            return new ViewTransformerChain($container->tagged(WebApp::VIEW_TRANSFORMER));
         });
 
         $container->tag([
             NullViewTransformer::class,
             StringViewTransformer::class,
-        ], ['nimble.view_transformer']);
+        ], [WebApp::VIEW_TRANSFORMER]);
     }
 }
